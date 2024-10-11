@@ -1,7 +1,11 @@
 ﻿using System;
 class Currency
 {
-    public string input = "";
+    public string input { get; set; }
+    public float BRL { get; set; }
+    public float USD { get; set; }
+    public float EUR { get; set; }
+    public float CAN { get; set; }
     public void Card()
     {
         Console.WriteLine("\t\t  ___________________ \t\t");
@@ -26,22 +30,19 @@ class Currency
                 if (inp.Length == 3)
                 {
                     input = inp.ToLower();
-                    isaNumber = true;
+                    Converter(input);
                 }
                 else if (inp.Length > 4)
                 {
-                    isaNumber = false;
                     Console.Write("\t\t Item inserted is to long ");
                 }
                 else if(inp.Length <= 0)
                 {
-                    isaNumber = false;
                     Console.Write("\t\t Item inserted is to short ");
                 }
                 else
                 {
-                    isaNumber = false;
-                    Console.WriteLine($"Try again, {input} is not a number ");
+                    Console.WriteLine($"\t\t Try again,{input} is not a number ");
                 }
             }
         }
@@ -51,9 +52,28 @@ class Currency
         }
     }
 
-    public static void Converter()
+    public void Converter(string input)
     {
-        
+        if (input == "brl")
+        {
+
+        }
+        else if (input == "usd")
+        {
+
+        }
+        else if (input == "eur")
+        {
+
+        }
+        else if (input == "can")
+        {
+
+        }
+        else
+        {
+            Console.Write("\t\t Invalid Currency ");
+        }
     }
 }
 

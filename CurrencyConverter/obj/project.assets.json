@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Waz\\source\\repos\\CurrencyConverter\\CurrencyConverter\\CurrencyConverter.csproj",
+      "projectUniqueName": "C:\\Users\\Waz\\Desktop\\projeots\\Converter-app\\Currency-Converter\\CurrencyConverter\\CurrencyConverter.csproj",
       "projectName": "CurrencyConverter",
-      "projectPath": "C:\\Users\\Waz\\source\\repos\\CurrencyConverter\\CurrencyConverter\\CurrencyConverter.csproj",
+      "projectPath": "C:\\Users\\Waz\\Desktop\\projeots\\Converter-app\\Currency-Converter\\CurrencyConverter\\CurrencyConverter.csproj",
       "packagesPath": "C:\\Users\\Waz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Waz\\source\\repos\\CurrencyConverter\\CurrencyConverter\\obj\\",
+      "outputPath": "C:\\Users\\Waz\\Desktop\\projeots\\Converter-app\\Currency-Converter\\CurrencyConverter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Waz\\AppData\\Roaming\\NuGet\\NuGet.Config",
