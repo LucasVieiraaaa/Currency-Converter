@@ -42,7 +42,7 @@ class Currency
                 }
                 else
                 {
-                    Console.WriteLine($"\t\t Try again,{input} is not a number ");
+                    Console.WriteLine($"\t\t Try again, {inp} is not a number ");
                 }
             }
         }
