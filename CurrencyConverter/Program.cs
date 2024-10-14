@@ -6,6 +6,7 @@ class Currency
     public float USD { get; set; }
     public float EUR { get; set; }
     public float CAN { get; set; }
+    public float CoinValue { get; set; }
     public void Card()
     {
         Console.WriteLine("\t\t  ___________________ \t\t");
@@ -54,25 +55,120 @@ class Currency
 
     public void Converter(string input)
     {
+        float coinValue = 0;
+
         if (input == "brl")
         {
+            CoinValue = 0;
+            Card();
+            Console.WriteLine("\t     To which currency do you want to convert?");
+
+            string inp = Console.ReadLine();
+
+            if (inp.Length == 3)
+            {
+                input = inp.ToLower();
+            }
+            else if (inp.Length > 4)
+            {
+                Console.Write("\t\t Item inserted is to long ");
+            }
+            else if (inp.Length <= 0)
+            {
+                Console.Write("\t\t Item inserted is to short ");
+            }
+            else
+            {
+                Console.WriteLine($"\t\t Try again, {inp} is not a number ");
+            }
 
         }
         else if (input == "usd")
         {
+            CoinValue = 0;
+            Card();
+            Console.WriteLine("\t     To which currency do you want to convert?");
 
+            string inp = Console.ReadLine();
+
+            if (inp.Length == 3)
+            {
+                input = inp.ToLower();
+            }
+            else if (inp.Length > 4)
+            {
+                Console.Write("\t\t Item inserted is to long ");
+            }
+            else if (inp.Length <= 0)
+            {
+                Console.Write("\t\t Item inserted is to short ");
+            }
+            else
+            {
+                Console.WriteLine($"\t\t Try again, {inp} is not a number ");
+            }
         }
         else if (input == "eur")
         {
+            CoinValue = 0;
+            Card();
+            Console.WriteLine("\t     To which currency do you want to convert?");
 
+            string inp = Console.ReadLine();
+
+            if (inp.Length == 3)
+            {
+                input = inp.ToLower();
+            }
+            else if (inp.Length > 4)
+            {
+                Console.Write("\t\t Item inserted is to long ");
+            }
+            else if (inp.Length <= 0)
+            {
+                Console.Write("\t\t Item inserted is to short ");
+            }
+            else
+            {
+                Console.WriteLine($"\t\t Try again, {inp} is not a number ");
+            }
         }
         else if (input == "can")
         {
+            CoinValue = 0;
+            Card();
+            Console.WriteLine("\t     To which currency do you want to convert?");
 
+            string inp = Console.ReadLine();
+
+            if (inp.Length == 3)
+            {
+                input = inp.ToLower();
+            }
+            else if (inp.Length > 4)
+            {
+                Console.Write("\t\t Item inserted is to long ");
+            }
+            else if (inp.Length <= 0)
+            {
+                Console.Write("\t\t Item inserted is to short ");
+            }
+            else
+            {
+                Console.WriteLine($"\t\t Try again, {inp} is not a number ");
+            }
         }
         else
         {
             Console.Write("\t\t Invalid Currency ");
+        }
+    }
+
+    public void Verify(string input)
+    {
+        if(input.ToLower() == "brl")
+        {
+            
         }
     }
 }
